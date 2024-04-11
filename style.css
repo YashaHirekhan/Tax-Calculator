@@ -72,11 +72,16 @@ button[type="button"]{
     align-items: center;
 }
 
+
+h3{
+    color: #00B386;
+}
+
 .modal {
     display: none;
     position: fixed;
     justify-content: center;
-    align-items: center; /* Center vertically and horizontally */
+    align-items: center;
     z-index: 1;
     left: 0;
     top: 0;
@@ -88,7 +93,7 @@ button[type="button"]{
 
 .modal-content {
     display: flex;
-    flex-direction: column; /* Align content vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #fff;
@@ -96,11 +101,7 @@ button[type="button"]{
     border: 1px solid #888;
     width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-     /* Set text color to green */
-    text-align: center; /* Center align text */
-}
-h3{
-    color: #00B386;
+    text-align: center;
 }
 
 .close {
@@ -108,7 +109,7 @@ h3{
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    align-self: flex-end; /* Align close button to the right */
+    align-self: flex-end;
 }
 
 .close:hover,
