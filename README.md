@@ -15,8 +15,16 @@ This is a simple web-based tax calculator application built with HTML, CSS, and 
   - Error icons are displayed next to the fields that require input or validation.
 
 - **Tax Calculation**:
-  - Based on the entered details and age group, the application calculates the taxable income.
-  - The tax amount is calculated based on the taxable income and the tax rates corresponding to the selected age group.
+  - The tax calculation works based on this formula -
+  - Overall income (after deductions) under 8 (≤) Lakhs is not taxed.
+      - Ex - if Gross Annual Income + Extra Income - Deductions =  6 Lakhs, no tax
+      - if Gross Annual Income + Extra Income - Deductions =  9 Lakhs, tax
+  - Income over 8 (>) Lakhs, the amount over 8 Lakhs is taxed at
+      - 30% for people with age < 40
+      - 40% for people with age ≥ 40 but < 60
+      - 10% for people with age ≥ 60
+      - Example
+        - Age = 34, Income = 40 Lakhs, no deductions, tax = .3 * (40 - 8) = .3 * 32 = 9.6 Lakhs
 
 - **Modal Display**:
   - Upon successful validation and calculation, a modal pops up displaying the calculated tax amount.
